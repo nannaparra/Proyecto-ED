@@ -139,7 +139,7 @@ public class GUI extends JFrame {
 		textField_ValorTransaccion.addKeyListener(new KeyAdapter() {
 			public void keyTyped(KeyEvent e) {
 				char valido=e.getKeyChar();
-				if((valido<'0' || valido>'9' )&& (valido<'.' || valido>'.') )
+				if((valido<'0' || valido>'9' )&& (valido<'.' || valido>'.') && (valido<'-' || valido>'-'))
 					e.consume();
 			}
 		});
@@ -286,7 +286,7 @@ public class GUI extends JFrame {
 		textField_montoABuscar.addKeyListener(new KeyAdapter() {
 			public void keyTyped(KeyEvent e) {
 				char valido=e.getKeyChar();
-				if((valido<'0' || valido>'9' )&& (valido<'.' || valido>'.') )
+				if((valido<'0' || valido>'9' )&& (valido<'.' || valido>'.') && (valido<'-' || valido>'-') )
 					e.consume();
 			}
 		});
@@ -391,7 +391,7 @@ public class GUI extends JFrame {
 					lblNombreUsuario.setText(logica.nombreUsuario().toUpperCase());
 				}
 				else {
-					JOptionPane.showMessageDialog(null,"Contraseña invalida.");
+					JOptionPane.showMessageDialog(null,"Contraseña invalida.","",JOptionPane.PLAIN_MESSAGE);
 					passwordField.setText(null);
 				}
 			}
@@ -401,11 +401,11 @@ public class GUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				int exito=logica.nuevaTransaccion(textField_ValorTransaccion.getText(), textField_Descripcion.getText());
 				if(exito==0) {
-					JOptionPane.showMessageDialog(null,"Transacción realizada con exito.");
+					JOptionPane.showMessageDialog(null,"Transacción realizada con exito.","Transacción exitosa",JOptionPane.PLAIN_MESSAGE);
 					lblValorSaldo.setText(logica.saldo());
 				}
 				else {
-					JOptionPane.showMessageDialog(null,"No se puede realizar la extracción. Saldo insuficiente");
+					JOptionPane.showMessageDialog(null,"No se puede realizar la extracción. Saldo insuficiente","Saldo insuficiente",JOptionPane.PLAIN_MESSAGE);
 				}
 				textField_ValorTransaccion.setText(null);
 				textField_Descripcion.setText(null);
