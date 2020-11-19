@@ -30,8 +30,8 @@ public class Logica {
 		transacciones=new Cola<Transaccion>();
 		saldo=0;
 		usuario="";
-		dicc=new DiccionarioConHashAbierto <Float,String>();
-		ccp= new CCPHeap<Float, String>(100,new DefaultComparator());
+		dicc=new DiccionarioHA <Float,String>();
+		ccp= new Heap<Float, String>(100,new DefaultComparator());
 	}
 	
 	/**
