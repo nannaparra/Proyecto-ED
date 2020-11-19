@@ -9,7 +9,7 @@ public class EmptyPriorityQueueException extends Exception {
 	/**
 	 * Inicializa una nueva excepcion.
 	 * El msg describe el origen de la misma. 
-	 * @param msg describe el origen de la excepcion
+	 * @param msj describe el origen de la excepcion
 	 */
  public EmptyPriorityQueueException(String msj) {
 	 super(msj);

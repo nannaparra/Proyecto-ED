@@ -178,10 +178,10 @@ public class GUI extends JFrame {
 		btnEntrar.setBounds(234, 185, 89, 23);
 		panel_Ingreso.add(btnEntrar);
 		
-		JLabel lblContraseña = new JLabel("Ingrese contrase\u00F1a:");
-		lblContraseña.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblContraseña.setBounds(202, 120, 164, 23);
-		panel_Ingreso.add(lblContraseña);
+		JLabel lblContrasena = new JLabel("Ingrese contraseña:");
+		lblContrasena.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblContrasena.setBounds(202, 120, 164, 23);
+		panel_Ingreso.add(lblContrasena);
 		
 		passwordField = new JPasswordField();
 		passwordField.setEchoChar('*');

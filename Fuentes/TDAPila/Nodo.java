@@ -4,7 +4,7 @@ package TDAPila;
  * Clase Nodo
  * @author Parra, Nadina y Diomedi, Antonela.
  *
- * @param <E>
+ * @param <E> Tipo de Dato
  */
 public class Nodo<E> {
 	private E elemento;

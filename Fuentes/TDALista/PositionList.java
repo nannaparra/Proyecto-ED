@@ -57,20 +57,20 @@ public interface PositionList<E>  extends Iterable<E>{
 	
 	/**
 	 * Inserta un elemento al principio de la lista.
-	 * @param element Elemento a insertar al principio de la lista.
+	 * @param e Elemento a insertar al principio de la lista.
 	 */
 	public void addFirst(E e);
 	
 	/**
 	 * Inserta un elemento al final de la lista.
-	 * @param element Elemento a insertar al final de la lista.
+	 * @param e Elemento a insertar al final de la lista.
 	 */
 	public void addLast(E e);
 	
 	/**
 	 * Inserta un elemento luego de la posición pasada por parámatro.
 	 * @param p Posición en cuya posición siguiente se insertará el elemento pasado por parámetro.
-	 * @param element Elemento a insertar luego de la posición pasada como parámetro.
+	 * @param e Elemento a insertar luego de la posición pasada como parámetro.
 	 * @throws InvalidPositionException si la posición es inválida o la lista está vacía.
 	 */
 	public void addAfter(Position<E> p, E e) throws InvalidPositionException;
@@ -78,7 +78,7 @@ public interface PositionList<E>  extends Iterable<E>{
 	/**
 	 * Inserta un elemento antes de la posición pasada como parámetro.
 	 * @param p Posición en cuya posición anterior se insertará el elemento pasado por parámetro. 
-	 * @param element Elemento a insertar antes de la posición pasada como parámetro.
+	 * @param e Elemento a insertar antes de la posición pasada como parámetro.
 	 * @throws InvalidPositionException si la posición es inválida o la lista está vacía.
 	 */
 	public void addBefore(Position<E> p, E e) throws InvalidPositionException;
@@ -94,7 +94,7 @@ public interface PositionList<E>  extends Iterable<E>{
 	/**
 	 * Establece el elemento en la posición pasados por parámetro. Reemplaza el elemento que se encontraba anteriormente en esa posición y devuelve el elemento anterior.
 	 * @param p Posición a establecer el elemento pasado por parámetro.
-	 * @param element Elemento a establecer en la posición pasada por parámetro.
+	 * @param e Elemento a establecer en la posición pasada por parámetro.
 	 * @return Elemento anterior.
 	 * @throws InvalidPositionException si la posición es inválida o la lista está vacía.	 
 	 */

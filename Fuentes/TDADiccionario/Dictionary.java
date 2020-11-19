@@ -34,7 +34,8 @@ public interface Dictionary<K,V>
 	/**
 	 * Inserta una entrada con una clave y un valor dado en el diccionario y retorna la entrada creada.
 	 * @param key Clave de la entrada a crear.
-	 * @return value Valor de la entrada a crear.
+	 * @param value Valor de la entrada a crear.
+	 * @return Entrada que se inserto
 	 * @throws InvalidKeyException si la clave pasada por par�metro es inv�lida.
 	 */
 	public Entry<K,V> insert(K key, V value) throws InvalidKeyException;

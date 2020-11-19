@@ -3,8 +3,8 @@ package TDAColaCP;
 /**
  * 
  * Clase Heap
- *@author Antonela Diomedi y Nadina Guadalupe Parra
- * ImplementaciÃ³n de la interface PriorityQueue<K,V> con un Heap
+ * @author Antonela Diomedi y Nadina Guadalupe Parra
+ * Implementación de la interface PriorityQueue<K,V> con un Heap
  */
 public class Heap<K,V> implements PriorityQueue<K,V> {
 	protected Entrada<K,V> [] elems;

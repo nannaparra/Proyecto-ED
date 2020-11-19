@@ -210,7 +210,7 @@ public class DiccionarioHA <K,V> implements Dictionary<K,V> {
 
 	/**
 	 * Consulta si el par�metro n es primo.
-	 * @param n
+	 * @param nro numero
 	 * @return true si y solo si n es primo.
 	 */
 	private boolean esPrimo(int nro) {
@@ -227,7 +227,7 @@ public class DiccionarioHA <K,V> implements Dictionary<K,V> {
 
 	/**
 	 * Devuelve el siguiente n�mero primo de n.
-	 * @param n
+	 * @param l l
 	 * @return el siguente primo de n.
 	 */
 	private int siguienteP(int l) {
@@ -243,7 +243,8 @@ public class DiccionarioHA <K,V> implements Dictionary<K,V> {
 
 	/**
 	 * Devuelve el valor de hash clave.
-	 * @param k
+	 * @param key clave
+	 * @param l l
 	 * @return el valor de hash de la clave k.
 	 */
 	private int codigoHash(K key, int l) {
