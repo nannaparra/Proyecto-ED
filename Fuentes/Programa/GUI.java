@@ -26,7 +26,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 /**
- * Clase Gui: Crea y diseña la interfaz grafica del programa.
+ * Clase GUI
+ * Crea y diseña la interfaz grafica del programa.
+ * 
  * @author Parra, Nadina y Diomedi, Antonela.
  * Proyecto Estructura de Datos - 2020.
  *
@@ -35,7 +37,7 @@ public class GUI extends JFrame {
 
 	private JPanel contentPane;
 	private final JLayeredPane layeredPane = new JLayeredPane();
-	private Logica logica=new Logica();
+	private CuentaBancaria logica=new CuentaBancaria();
 	private JTextField textField_ValorTransaccion;
 	private JTextField textField_Descripcion;
 	private JTextField textField_montoABuscar;
@@ -385,10 +387,11 @@ public class GUI extends JFrame {
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String codigo=passwordField.getText();
-				if(logica.codigoAcceso(codigo)) {
+				String valido=logica.codigoAcceso(codigo);
+				if(valido!=null) {
 					layeredPane.removeAll();
 					layeredPane.add(panel_Cuenta);
-					lblNombreUsuario.setText(logica.nombreUsuario().toUpperCase());
+					lblNombreUsuario.setText(valido.toUpperCase());
 				}
 				else {
 					JOptionPane.showMessageDialog(null,"Contraseña invalida.","",JOptionPane.PLAIN_MESSAGE);
