@@ -52,6 +52,9 @@ public class ColaCircular<E> implements Queue<E> {
 		return ((cola.length-f+r)%(cola.length));
 	}
 	
+	/**
+	 * Aumenta el tamaño de la cola.
+	 */
 	private void redimensionar() {
 		E[] nuevo=(E[])new Object[2*cola.length];
 		int m=size();

@@ -1,5 +1,13 @@
 package TDADiccionario;
 
+/**
+ * Interface Dictionary<K,V> - Estructura de Datos (DCIC-UNS).
+ * Define los datos y operaciones aplicables sobre una diccionario.
+ * @author  Antonela Diomedi y Nadina Guadalupe Parra
+ *
+ * @param <K> Tipo de dato de las claves a almacenar en el diccionario.
+ * @param <V> Tipo de dato de los valores a almacenar en el diccionario.
+ */
 
 public interface Dictionary<K,V>
 {
