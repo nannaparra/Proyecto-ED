@@ -81,7 +81,7 @@ public class GUI extends JFrame {
 		panel_OpCostosa.setLayout(null);
 		
 		JLabel lblOpCostosa = new JLabel("Operaci\u00F3n m\u00E1s costosa");
-		lblOpCostosa.setBounds(64, 11, 192, 31);
+		lblOpCostosa.setBounds(64, 11, 192, 32);
 		lblOpCostosa.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		panel_OpCostosa.add(lblOpCostosa);
 		
@@ -96,7 +96,7 @@ public class GUI extends JFrame {
 		panel_OpHistorica.setLayout(null);
 		
 		JLabel lblOpHistorica = new JLabel("Operaci\u00F3n m\u00E1s historica");
-		lblOpHistorica.setBounds(64, 11, 188, 22);
+		lblOpHistorica.setBounds(64, 11, 192, 32);
 		lblOpHistorica.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		panel_OpHistorica.add(lblOpHistorica);
 		
